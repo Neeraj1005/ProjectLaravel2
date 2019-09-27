@@ -7,5 +7,11 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('db','UserController@index');
+
+
+//for getting database record Route::get('query','DbQueryController@index');
+//for delete records Route::get('query','DbQueryController@deletedb');
+//for insert data Route::get('query','DbQueryController@insertdb');
+Route::get('query','DbQueryController@updatedb');
+
 Route::get('/home', 'HomeController@index')->name('home');
