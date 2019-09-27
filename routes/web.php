@@ -7,11 +7,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-//Route::get('/db','DbModelController@index');
+Route::view('user','user');
 
-//for paginate
-//Route::get('paginate','CompaniesController@index');
-
-Route::get('list','BladeController@index');
 
 Route::get('/home', 'HomeController@index')->name('home');
